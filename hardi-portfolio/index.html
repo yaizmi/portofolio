@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HARDI — UI/UX Designer & Web Developer based in Yogyakarta, Indonesia. Crafting digital products that bridge design and code.">
+  <title>HARDI — UI/UX Designer & Web Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ════════════════════════════════════════ -->
+  <nav class="nav">
+    <div class="wrap">
+      <div class="nav-row">
+        <div class="nav-logo">HARDI<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-btn">Let's Talk</a>
+        <button class="burger" onclick="toggleMobileNav()" aria-label="Open menu" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <nav class="mob-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="#about"         onclick="closeMobileNav()">About</a>
+    <a href="#services"      onclick="closeMobileNav()">Services</a>
+    <a href="#projects"      onclick="closeMobileNav()">Work</a>
+    <a href="#skills"        onclick="closeMobileNav()">Skills</a>
+    <a href="#testimonials"  onclick="closeMobileNav()">Reviews</a>
+    <a href="#contact"       onclick="closeMobileNav()">Contact</a>
+    <a href="#contact" class="mob-cta" onclick="closeMobileNav()">Let's Talk &rarr;</a>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <div class="hero-bar reveal">
+      <div class="hero-bar-left">
+        <div class="pulse"></div>
+        Available for projects
+      </div>
+      <div class="hero-bar-right">UI/UX &middot; Web Dev &middot; Yogyakarta, 2026</div>
+    </div>
+
+    <div class="hero-name-wrap">
+      <h1 class="hero-name">HARDI<span class="dot">.</span></h1>
+    </div>
+
+    <div class="hero-foot">
+      <div class="hero-foot-left reveal">
+        <p class="hero-tagline">
+          <strong>UI/UX Designer &amp; Web Developer</strong> &mdash;
+          I close the gap between design and code.
+          One person who speaks both languages fluently.
+        </p>
+        <div class="hero-roles">
+          <div class="hero-role-pill">UI/UX Design</div>
+          <div class="hero-role-pill">Web Development</div>
+          <div class="hero-role-pill">Front-End</div>
+          <div class="hero-role-pill">Full-Stack</div>
+          <div class="hero-role-pill">Dashboard Design</div>
+        </div>
+      </div>
+
+      <div class="hero-foot-right reveal delay-1">
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">3<span>+</span></div>
+            <div class="stat-lbl">Years</div>
+          </div>
+          <div>
+            <div class="stat-num">20<span>+</span></div>
+            <div class="stat-lbl">Projects</div>
+          </div>
+          <div>
+            <div class="stat-num">100<span>%</span></div>
+            <div class="stat-lbl">Satisfaction</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-solid">View Work &rarr;</a>
+          <a href="#contact"  class="btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">About</div>
+        <h2 class="section-heading">Design with intent.<br>Code with care.</h2>
+      </div>
+
+      <div class="about-flat reveal">
+        <div class="about-flat-text">
+          <p class="about-para">
+            Saya mahasiswa Informatika yang menggabungkan UI/UX Design dan Web Development &mdash;
+            dua disiplin yang biasanya dipisahkan, tapi
+            <em>paling powerful ketika ada satu orang yang paham keduanya.</em>
+          </p>
+          <p class="about-para">
+            Perjalanan saya dimulai dari satu pertanyaan: mengapa produk digital terasa berat
+            untuk digunakan? Pertanyaan itu menjadi obsesi yang membawa saya mendalami keduanya &mdash;
+            bukan hanya membuat tampilan yang indah, tapi memastikan setiap keputusan desain bisa
+            <em>diimplementasikan dan berdampak nyata</em> pada bisnis.
+          </p>
+        </div>
+
+        <!-- Journey Timeline -->
+        <div class="journey">
+          <div class="journey-item">
+            <div class="journey-dot"></div>
+            <div class="journey-line"></div>
+            <div class="journey-content">
+              <div class="journey-tag">Sekarang</div>
+              <div class="journey-title">UI/UX Freelancer</div>
+              <div class="journey-desc">Menerima project freelance di bidang UI/UX Design dan Web Development. Membantu bisnis dan startup tampil profesional secara digital — dari desain hingga implementasi kode.</div>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-dot"></div>
+            <div class="journey-line"></div>
+            <div class="journey-content">
+              <div class="journey-tag">Sedang Berjalan</div>
+              <div class="journey-title">Fashion Recommendation System</div>
+              <div class="journey-desc">Sedang membangun platform rekomendasi fashion berbasis collaborative filtering — menggabungkan keahlian UI/UX dan full-stack development dalam satu produk nyata.</div>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-dot journey-dot-gold"></div>
+            <div class="journey-line"></div>
+            <div class="journey-content">
+              <div class="journey-tag journey-tag-gold">Prestasi</div>
+              <div class="journey-title">🥉 Juara 3 &mdash; UI/UX Design, SeFest</div>
+              <div class="journey-desc">Meraih juara ketiga kompetisi UI/UX Design di SeFest yang diselenggarakan oleh Telkom University Surabaya. Pengalaman ini membuktikan bahwa desain yang saya buat mampu bersaing di tingkat nasional.</div>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-dot"></div>
+            <div class="journey-content">
+              <div class="journey-tag">Saat Ini</div>
+              <div class="journey-title">Mahasiswa Informatika</div>
+              <div class="journey-desc">Menempuh studi Informatika sambil terus mengasah kemampuan di dunia nyata — menggabungkan teori akademik dengan praktik desain dan pengembangan produk digital.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-quad">
+          <div class="quad-cell">
+            <div class="quad-num">01</div>
+            <div class="quad-title">Research First</div>
+            <div class="quad-desc">Setiap keputusan berakar dari pemahaman mendalam tentang pengguna dan bisnis nyata.</div>
+          </div>
+          <div class="quad-cell">
+            <div class="quad-num">02</div>
+            <div class="quad-title">Design to Code</div>
+            <div class="quad-desc">Tidak ada yang hilang di antara desain dan implementasi &mdash; saya mengerjakan keduanya.</div>
+          </div>
+          <div class="quad-cell">
+            <div class="quad-num">03</div>
+            <div class="quad-title">Result-Driven</div>
+            <div class="quad-desc">Fokus pada metrik nyata: konversi, retention, dan kepuasan pengguna yang terukur.</div>
+          </div>
+          <div class="quad-cell">
+            <div class="quad-num">04</div>
+            <div class="quad-title">Iterative</div>
+            <div class="quad-desc">Diperbaiki terus melalui feedback loop ketat dan pengujian dengan pengguna nyata.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="services">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">Services</div>
+        <h2 class="section-heading">What I deliver</h2>
+        <p class="section-sub">Dari konsep awal hingga produk jadi &mdash; setiap layanan dirancang untuk memberikan dampak nyata bagi bisnis Anda.</p>
+      </div>
+
+      <div class="svc-table reveal">
+
+        <div class="svc-item">
+          <div class="svc-num">01</div>
+          <div class="svc-main">
+            <div class="svc-title">UI/UX Design</div>
+            <div class="svc-desc">Desain antarmuka yang intuitif dan estetis, berbasis riset pengguna mendalam. Dari wireframe hingga high-fidelity prototype yang siap diimplementasikan.</div>
+          </div>
+          <div class="svc-aside">
+            <div class="svc-tags">
+              <span class="svc-tag">User Research</span>
+              <span class="svc-tag">Wireframing</span>
+              <span class="svc-tag">Prototyping</span>
+              <span class="svc-tag">Usability Test</span>
+            </div>
+            <div class="svc-arrow">&rarr;</div>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-num">02</div>
+          <div class="svc-main">
+            <div class="svc-title">Website Design</div>
+            <div class="svc-desc">Desain website yang membangun kepercayaan brand dan mengkonversi pengunjung menjadi pelanggan. Responsive untuk semua perangkat, optimized untuk konversi.</div>
+          </div>
+          <div class="svc-aside">
+            <div class="svc-tags">
+              <span class="svc-tag">Landing Page</span>
+              <span class="svc-tag">Company Profile</span>
+              <span class="svc-tag">Responsive</span>
+              <span class="svc-tag">Brand Identity</span>
+            </div>
+            <div class="svc-arrow">&rarr;</div>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-num">03</div>
+          <div class="svc-main">
+            <div class="svc-title">Front-End Development</div>
+            <div class="svc-desc">Mengubah desain menjadi kode yang bersih, cepat, dan interaktif. Pixel-perfect dengan perhatian penuh pada performa dan aksesibilitas.</div>
+          </div>
+          <div class="svc-aside">
+            <div class="svc-tags">
+              <span class="svc-tag">HTML/CSS/JS</span>
+              <span class="svc-tag">Bootstrap</span>
+              <span class="svc-tag">Performance</span>
+              <span class="svc-tag">Accessibility</span>
+            </div>
+            <div class="svc-arrow">&rarr;</div>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-num">04</div>
+          <div class="svc-main">
+            <div class="svc-title">Full Website Development</div>
+            <div class="svc-desc">Pengembangan website lengkap dari database hingga antarmuka. Solusi full-stack yang skalabel untuk bisnis yang serius bertumbuh secara digital.</div>
+          </div>
+          <div class="svc-aside">
+            <div class="svc-tags">
+              <span class="svc-tag">PHP</span>
+              <span class="svc-tag">MySQL</span>
+              <span class="svc-tag">REST API</span>
+              <span class="svc-tag">Custom CMS</span>
+            </div>
+            <div class="svc-arrow">&rarr;</div>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-num">05</div>
+          <div class="svc-main">
+            <div class="svc-title">Dashboard Design</div>
+            <div class="svc-desc">Dashboard data yang powerful sekaligus mudah dipahami. Visualisasi data kompleks menjadi insights actionable untuk pengambil keputusan bisnis.</div>
+          </div>
+          <div class="svc-aside">
+            <div class="svc-tags">
+              <span class="svc-tag">Data Viz</span>
+              <span class="svc-tag">Analytics</span>
+              <span class="svc-tag">Admin Panel</span>
+              <span class="svc-tag">Reporting</span>
+            </div>
+            <div class="svc-arrow">&rarr;</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+
+      <div class="proj-head reveal">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-heading">Projects that prove it</h2>
+        </div>
+        <div class="proj-tabs">
+          <button class="proj-tab active" onclick="filterProjects('all', this)">All</button>
+          <button class="proj-tab" onclick="filterProjects('uiux', this)">UI/UX</button>
+          <button class="proj-tab" onclick="filterProjects('dev', this)">Dev</button>
+        </div>
+      </div>
+
+      <div class="proj-grid reveal" id="proj-grid">
+
+        <!-- UI/UX: Mental Health App -->
+        <div class="proj-card" data-category="uiux">
+          <div class="proj-thumb" style="background:#F0F4FF">
+            <div class="proj-thumb-char" style="color:#C7D2FE">Mh</div>
+            <div class="proj-cat-badge">UI/UX</div>
+          </div>
+          <div class="proj-card-body">
+            <div class="proj-card-name">Mental Health App</div>
+            <div class="proj-card-brief">Aplikasi mobile untuk mendukung kesehatan mental melalui mood tracking, journaling, dan akses ke sumber daya profesional.</div>
+            <div class="proj-meta">
+              <div class="proj-meta-cell"><div class="proj-meta-key">Problem</div><div class="proj-meta-val">Pengguna kesulitan memantau dan mengelola kondisi mental secara mandiri</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Solution</div><div class="proj-meta-val">Mood tracker harian + jurnal + koneksi ke konselor</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Process</div><div class="proj-meta-val">Research &rarr; Wireframe &rarr; Prototype &rarr; Test</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Tools</div><div class="proj-meta-val">Figma, FigJam</div></div>
+            </div>
+            <div class="proj-result">UI empatik &middot; Alur tenang yang tidak overwhelming untuk pengguna</div>
+            <div class="proj-card-arr">View Case Study &rarr;</div>
+          </div>
+        </div>
+
+        <!-- UI/UX: City Problem Reporting -->
+        <div class="proj-card" data-category="uiux">
+          <div class="proj-thumb" style="background:#ECFDF5">
+            <div class="proj-thumb-char" style="color:#6EE7B7">Cr</div>
+            <div class="proj-cat-badge">UI/UX</div>
+          </div>
+          <div class="proj-card-body">
+            <div class="proj-card-name">City Problem Reporting</div>
+            <div class="proj-card-brief">Platform pelaporan masalah kota berbasis mobile — memudahkan warga melaporkan kerusakan infrastruktur ke dinas terkait.</div>
+            <div class="proj-meta">
+              <div class="proj-meta-cell"><div class="proj-meta-key">Problem</div><div class="proj-meta-val">Tidak ada kanal pelaporan yang mudah dan transparan bagi warga</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Solution</div><div class="proj-meta-val">Laporan berbasis lokasi + status tracking real-time</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Process</div><div class="proj-meta-val">User Interview &rarr; User Flow &rarr; Prototype</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Tools</div><div class="proj-meta-val">Figma, FigJam</div></div>
+            </div>
+            <div class="proj-result">Alur pelaporan 3 langkah &middot; Antarmuka intuitif untuk semua kalangan</div>
+            <div class="proj-card-arr">View Case Study &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Dev: Fashion Recommendation -->
+        <div class="proj-card" data-category="dev">
+          <div class="proj-thumb" style="background:#FDF4FF">
+            <div class="proj-thumb-char" style="color:#E9D5FF">Fr</div>
+            <div class="proj-cat-badge">Dev</div>
+          </div>
+          <div class="proj-card-body">
+            <div class="proj-card-name">Fashion Recommendation</div>
+            <div class="proj-card-brief">Sistem rekomendasi fashion berbasis preferensi pengguna menggunakan algoritma collaborative filtering.</div>
+            <div class="proj-meta">
+              <div class="proj-meta-cell"><div class="proj-meta-key">Problem</div><div class="proj-meta-val">Pengguna kewalahan memilih outfit yang sesuai selera</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Solution</div><div class="proj-meta-val">Personalized feed berdasarkan riwayat &amp; preferensi</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Stack</div><div class="proj-meta-val">PHP, MySQL, Bootstrap, JavaScript</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Process</div><div class="proj-meta-val">Algorithm &rarr; ERD &rarr; UI &rarr; Testing</div></div>
+            </div>
+            <div class="proj-result">Rekomendasi personal &middot; Pengalaman belanja lebih relevan</div>
+            <div class="proj-card-arr">View Project &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Dev: Website Iklim -->
+        <div class="proj-card" data-category="dev">
+          <div class="proj-thumb" style="background:#F0FDF4">
+            <div class="proj-thumb-char" style="color:#86EFAC">Wi</div>
+            <div class="proj-cat-badge">Dev</div>
+          </div>
+          <div class="proj-card-body">
+            <div class="proj-card-name">Website Iklim</div>
+            <div class="proj-card-brief">Website informasi iklim yang menyajikan data lingkungan secara visual dan mudah dipahami masyarakat umum.</div>
+            <div class="proj-meta">
+              <div class="proj-meta-cell"><div class="proj-meta-key">Problem</div><div class="proj-meta-val">Data iklim sulit diakses dan tidak ramah untuk masyarakat awam</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Solution</div><div class="proj-meta-val">Visualisasi data iklim yang bersih dan informatif</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Stack</div><div class="proj-meta-val">PHP, MySQL, JavaScript, Bootstrap</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Process</div><div class="proj-meta-val">Data mapping &rarr; UI Design &rarr; Dev &rarr; Launch</div></div>
+            </div>
+            <div class="proj-result">Data iklim yang aksesibel &middot; Responsif di semua perangkat</div>
+            <div class="proj-card-arr">View Project &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Dev: Pendaftaran Kampus -->
+        <div class="proj-card" data-category="dev">
+          <div class="proj-thumb" style="background:#FFFBEB">
+            <div class="proj-thumb-char" style="color:#FCD34D">Pk</div>
+            <div class="proj-cat-badge">Dev</div>
+          </div>
+          <div class="proj-card-body">
+            <div class="proj-card-name">Pendaftaran Kampus</div>
+            <div class="proj-card-brief">Sistem pendaftaran mahasiswa baru berbasis web dengan manajemen berkas digital, jadwal ujian, dan dashboard admin.</div>
+            <div class="proj-meta">
+              <div class="proj-meta-cell"><div class="proj-meta-key">Problem</div><div class="proj-meta-val">Proses pendaftaran manual lambat dan rawan kesalahan data</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Solution</div><div class="proj-meta-val">Sistem digital end-to-end dengan dashboard admin real-time</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Stack</div><div class="proj-meta-val">PHP, MySQL, Bootstrap, JavaScript</div></div>
+              <div class="proj-meta-cell"><div class="proj-meta-key">Process</div><div class="proj-meta-val">Requirements &rarr; ERD &rarr; Dev &rarr; UAT</div></div>
+            </div>
+            <div class="proj-result">Pendaftaran lebih cepat &middot; Data calon mahasiswa terpusat</div>
+            <div class="proj-card-arr">View Project &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-heading">Skills &amp; tools</h2>
+      </div>
+
+      <div class="skills-wrap reveal">
+        <div class="skills-col">
+          <div class="skills-col-head">Design</div>
+          <div class="skill-item"><span class="skill-name">Figma</span>            <span class="skill-level expert">Expert</span></div>
+          <div class="skill-item"><span class="skill-name">Prototyping</span>      <span class="skill-level expert">Expert</span></div>
+          <div class="skill-item"><span class="skill-name">Wireframing</span>      <span class="skill-level expert">Expert</span></div>
+          <div class="skill-item"><span class="skill-name">Design System</span>    <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">User Research</span>    <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">User Flow</span>         <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">Usability Testing</span><span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">UX Writing</span>        <span class="skill-level proficient">Proficient</span></div>
+        </div>
+        <div class="skills-col">
+          <div class="skills-col-head">Development</div>
+          <div class="skill-item"><span class="skill-name">HTML &amp; CSS</span>   <span class="skill-level expert">Expert</span></div>
+          <div class="skill-item"><span class="skill-name">JavaScript</span>        <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">PHP</span>               <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">MySQL</span>             <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">Bootstrap</span>         <span class="skill-level advanced">Advanced</span></div>
+          <div class="skill-item"><span class="skill-name">REST API</span>          <span class="skill-level proficient">Proficient</span></div>
+          <div class="skill-item"><span class="skill-name">Git &amp; GitHub</span> <span class="skill-level proficient">Proficient</span></div>
+          <div class="skill-item"><span class="skill-name">SEO</span>               <span class="skill-level proficient">Proficient</span></div>
+        </div>
+      </div>
+
+      <!-- ── DESIGN PORTFOLIO LINKS ─────────────────────────────
+           Ganti href="#" dengan link hasil kerja kamu.
+           Tambah atau hapus blok .design-link sesuai kebutuhan.
+      ──────────────────────────────────────────────────────── -->
+      <div class="design-portfolio reveal delay-1">
+        <div class="design-portfolio-head">
+          <div class="design-portfolio-label">UI/UX Design Portfolio</div>
+          <div class="design-portfolio-note">Lihat hasil kerja desain saya secara langsung</div>
+        </div>
+        <div class="design-links-grid">
+
+          <!-- Case Study — Mental Health App -->
+          <a href="https://www.figma.com/proto/a4zViqe0Dwc6wevPv31wnk/Untitled?t=8c8zm4prGOM8uQOx-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A12r" target="_blank" rel="noopener noreferrer" class="design-link">
+            <div class="design-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="design-link-info">
+              <div class="design-link-platform">Case Study — Mental Health App</div>
+              <div class="design-link-url">figma.com/proto/mental-health-app</div>
+            </div>
+            <div class="design-link-arrow">&nearr;</div>
+          </a>
+
+          <!-- Case Study — City Problem Reporting -->
+          <a href="https://www.figma.com/proto/rtklQfIJZ2fPi8vKsF7rc0/Untitled?node-id=0-1&p=f&t=8c8zm4prGOM8uQOx-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=284%3A1290" target="_blank" rel="noopener noreferrer" class="design-link">
+            <div class="design-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="design-link-info">
+              <div class="design-link-platform">Case Study — City Problem Reporting</div>
+              <div class="design-link-url">figma.com/proto/city-problem-reporting</div>
+            </div>
+            <div class="design-link-arrow">&nearr;</div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/yaizmi" target="_blank" rel="noopener noreferrer" class="design-link">
+            <div class="design-link-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="design-link-info">
+              <div class="design-link-platform">GitHub</div>
+              <div class="design-link-url">github.com/yaizmi</div>
+            </div>
+            <div class="design-link-arrow">&nearr;</div>
+          </a>
+
+        </div>
+      </div>
+      <!-- ── END DESIGN PORTFOLIO LINKS ──────────────────────── -->
+
+      <div class="tools-row reveal delay-2">
+        <div class="tools-label">Tools</div>
+        <span class="tool-chip">Figma</span>
+        <span class="tool-chip">FigJam</span>
+        <span class="tool-chip">VS Code</span>
+        <span class="tool-chip">GitHub</span>
+        <span class="tool-chip">Notion</span>
+        <span class="tool-chip">Hotjar</span>
+        <span class="tool-chip">Google Analytics</span>
+        <span class="tool-chip">Maze</span>
+        <span class="tool-chip">Miro</span>
+        <span class="tool-chip">Trello</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PROCESS
+  ════════════════════════════════════════ -->
+  <section class="section" id="process">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">Process</div>
+        <h2 class="section-heading">How I work,<br>every time</h2>
+      </div>
+
+      <div class="process-row reveal">
+        <div class="process-cell">
+          <div class="process-num">1</div>
+          <div class="process-title">Discover</div>
+          <div class="process-desc">Riset mendalam &mdash; pengguna, bisnis, kompetitor. Memahami pain points nyata sebelum satu piksel digambar.</div>
+        </div>
+        <div class="process-cell">
+          <div class="process-num">2</div>
+          <div class="process-title">Define</div>
+          <div class="process-desc">Mendefinisikan masalah inti berdasarkan data. Menetapkan success metrics yang jelas dan terukur.</div>
+        </div>
+        <div class="process-cell">
+          <div class="process-num">3</div>
+          <div class="process-title">Ideate</div>
+          <div class="process-desc">Eksplorasi solusi tanpa batas. Brainstorming, sketching, lalu prioritisasi ide yang paling berdampak.</div>
+        </div>
+        <div class="process-cell">
+          <div class="process-num">4</div>
+          <div class="process-title">Prototype</div>
+          <div class="process-desc">Prototype interaktif di Figma. Validasi dengan pengguna nyata sebelum satu baris kode ditulis.</div>
+        </div>
+        <div class="process-cell">
+          <div class="process-num">5</div>
+          <div class="process-title">Develop</div>
+          <div class="process-desc">Implementasi menjadi kode produksi yang bersih, cepat, dan maintainable &mdash; dari desain yang sama.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════ -->
+  <section class="section section-alt" id="testimonials">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">Client Reviews</div>
+        <h2 class="section-heading">Words from those<br>I've worked with</h2>
+        <p class="section-sub">Setiap review ditulis langsung oleh klien &mdash; tidak ada yang direkayasa.</p>
+      </div>
+
+      <!-- Reviews rendered by JS -->
+      <div id="testi-area"></div>
+
+      <div class="review-cta reveal">
+        <div class="review-cta-text">
+          <h4>Pernah bekerja sama dengan saya?</h4>
+          <p>Review jujur Anda sangat berarti bagi calon klien berikutnya.</p>
+        </div>
+        <button class="btn-solid" onclick="openReviewModal()">Tulis Review &rarr;</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:36px">
+        <div class="section-label">Contact</div>
+        <h2 class="section-heading">Let's build something<br>that matters</h2>
+        <p class="section-sub">Ceritakan project Anda. Saya akan merespons dalam 24 jam.</p>
+      </div>
+
+      <div class="contact-wrap reveal">
+
+        <div class="contact-left">
+          <div class="contact-link-row">
+            <span class="contact-link-type">Email</span>
+            <span class="contact-link-val">yaizmidinihardi1@gmail.com</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </div>
+          <div class="contact-link-row">
+            <span class="contact-link-type">LinkedIn</span>
+            <span class="contact-link-val">linkedin.com/in/yaizmi-dinihardi1</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </div>
+          <div class="contact-link-row">
+            <span class="contact-link-type">GitHub</span>
+            <span class="contact-link-val">github.com/yaizmi</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </div>
+          <div class="contact-link-row">
+            <span class="contact-link-type">Figma</span>
+            <span class="contact-link-val">figma.com/@izmihardi</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </div>
+
+          <div class="avail-bar">
+            <div class="avail-dot"></div>
+            <div>
+              <div class="avail-status">Available for new projects</div>
+              <div class="avail-note">Saat ini menerima project freelance baru &mdash; UI/UX Design dan Web Development.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Nama</label>
+                <input type="text" id="cf-name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" id="cf-email" class="form-input" placeholder="john@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Perusahaan <span class="form-label-opt">(opsional)</span></label>
+              <input type="text" id="cf-company" class="form-input" placeholder="Nama bisnis Anda">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Jenis Project</label>
+              <select id="cf-project" class="form-input form-select">
+                <option value="">Pilih...</option>
+                <option>UI/UX Design</option>
+                <option>Website Design</option>
+                <option>Front-End Development</option>
+                <option>Full Website Development</option>
+                <option>Dashboard Design</option>
+                <option>Design Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pesan</label>
+              <textarea id="cf-message" class="form-input" placeholder="Ceritakan project Anda, timeline, dan budget..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit btn-submit-wa">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.849L.057 23.428a.75.75 0 0 0 .916.916l5.579-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.528-5.208-1.443l-.374-.223-3.873 1.024 1.024-3.745-.245-.388A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Kirim via WhatsApp
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA STRIP
+  ════════════════════════════════════════ -->
+  <div class="cta-strip">
+    <div class="cta-heading">
+      Ready to make your<br>business look <em>undeniably good?</em>
+    </div>
+    <div class="cta-buttons">
+      <a href="mailto:yaizmidinihardi1@gmail.com" class="btn-white">Start a Project</a>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="footer-logo">HARDI<span>.</span></div>
+        <div class="footer-copy">&copy; 2026 Izmi Hardi &mdash; Yogyakarta, Indonesia</div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       REVIEW MODAL
+  ════════════════════════════════════════ -->
+  <div class="modal-bg" id="review-modal-bg" onclick="handleModalBackdropClick(event)" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+
+      <div class="modal-head">
+        <div>
+          <div class="modal-title" id="modal-title">Tulis Review</div>
+          <div class="modal-subtitle">Review Anda membantu calon klien membuat keputusan yang tepat</div>
+        </div>
+        <button class="modal-close" onclick="closeReviewModal()" aria-label="Tutup modal">&times;</button>
+      </div>
+
+      <!-- Form -->
+      <div class="modal-body" id="review-form-section">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="rv-name">Nama *</label>
+            <input type="text" class="form-input" id="rv-name" placeholder="Nama Anda">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="rv-role">Jabatan</label>
+            <input type="text" class="form-input" id="rv-role" placeholder="CEO, Product Manager...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rv-company">Perusahaan</label>
+          <input type="text" class="form-input" id="rv-company" placeholder="Nama bisnis Anda">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rv-project">Project yang dikerjakan *</label>
+          <input type="text" class="form-input" id="rv-project" placeholder="Website Company Profile, UI App, dll.">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Rating *</label>
+          <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Rating bintang">
+            <input type="radio" name="stars" id="star-5" value="5"><label for="star-5" title="5 bintang">&#9733;</label>
+            <input type="radio" name="stars" id="star-4" value="4"><label for="star-4" title="4 bintang">&#9733;</label>
+            <input type="radio" name="stars" id="star-3" value="3"><label for="star-3" title="3 bintang">&#9733;</label>
+            <input type="radio" name="stars" id="star-2" value="2"><label for="star-2" title="2 bintang">&#9733;</label>
+            <input type="radio" name="stars" id="star-1" value="1"><label for="star-1" title="1 bintang">&#9733;</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rv-text">Ulasan *</label>
+          <textarea class="form-input" id="rv-text" placeholder="Bagaimana pengalaman bekerja sama? Apa yang paling berkesan?" style="min-height:100px"></textarea>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="rv-consent">
+          <label for="rv-consent">Saya menyetujui review ini ditampilkan secara publik di website Izmi Hardi.</label>
+        </div>
+        <button class="btn-submit" onclick="submitReview()">Kirim Review &rarr;</button>
+      </div>
+
+      <!-- Success state -->
+      <div class="modal-success" id="review-success-section">
+        <div class="success-icon">&#10003;</div>
+        <div class="success-heading">Review berhasil dikirim</div>
+        <p class="success-text">Terima kasih &mdash; review Anda sudah ditampilkan dan sangat berarti bagi calon klien berikutnya.</p>
+        <button class="btn-ghost" onclick="closeReviewModal()" style="margin-top:8px">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       TOAST
+  ════════════════════════════════════════ -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="toast-dot"></div>
+    <span id="toast-msg"></span>
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
